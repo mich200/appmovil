@@ -1,0 +1,61 @@
+* {  
+    box-sizing: border-box;  
+}  
+
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh; /* Justo en el medio de la pantalla */  
+    background-color: #f0f0f0;  
+}  
+
+.login-container {  
+    background-color: white;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    width: 90%; /* Adaptar el ancho a la pantalla */  
+    max-width: 400px; /* Un ancho máximo para pantallas grandes */  
+    text-align: center;  
+}  
+
+input[type="text"],  
+input[type="password"] {  
+    width: 100%; /* Adaptar el ancho al contenedor */  
+    padding: 10px;  
+    margin: 5px 0;  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+}  
+
+input[type="submit"] {  
+    background-color: #28a745; /* Color de botón */  
+    color: white;  
+    border: none;  
+    padding: 10px;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    width: 100%; /* Adaptar el ancho al contenedor */  
+}  
+
+input[type="submit"]:hover {  
+    background-color: #218838; /* Color de botón al pasar el mouse */  
+}  
+
+p {  
+    margin-top: 15px;  
+}  
+
+@media (max-width: 500px) {  
+    h1 {  
+        font-size: 1.5em; /* Ajustar tamaño del título */  
+    }  
+
+    input[type="submit"] {  
+        padding: 12px; /* Mayor tamaño del botón en pantallas pequeñas */  
+    }  
+}  
